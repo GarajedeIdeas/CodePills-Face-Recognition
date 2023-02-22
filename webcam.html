@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="./public/js/face-api.min.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        video {
+            position: absolute;
+            z-index: 1;
+        }
+
+        canvas {
+            position: relative;
+            z-index: 20;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="position: relative">
+        <video onloadedmetadata="onPlay(this)" id="inputVideo" autoplay muted playsinline></video>
+        <canvas id="overlay">
+    </div>
+
+    <script src="./public/js/script_webcam.js"></script>
+</body>
+
+</html>

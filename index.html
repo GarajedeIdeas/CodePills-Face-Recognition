@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="./public/js/face-api.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            text-align: center;
+            background: #f2f6f8;
+        }
+
+        img {
+            position: absolute;
+            z-index: 1;
+        }
+
+        #container {
+            display: inline-block;
+            width: 612px;
+            height: 612px;
+            margin: 0 auto;
+            background: black;
+            position: relative;
+            border: 5px solid black;
+            border-radius: 10px;
+            box-shadow: 0 5px 50px #333
+        }
+
+        #canvas {
+            position: relative;
+            z-index: 20;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <img src="./public/images/image3.jpg" id="image">
+        <canvas id="canvas" width="612" height="612"></canvas>
+    </div>
+
+    <script src="./public/js/script.js" type="module"></script>
+</body>
+
+</html>
